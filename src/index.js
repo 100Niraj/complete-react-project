@@ -30,15 +30,38 @@ document.getElementById("root").appendChild(h1); */
 //in react v16 it's possible for render() without use div<> in html
 //to return an array of elemnts;
 
+///lesson_3 javascript expression
+
+const fname = "Niraj";
+const lname = "kumar"
+
 ReactDOM.render(
   <React.Fragment>
-    <h1>Hello Niraj !</h1>
-    <p>How are you?</p>
+    <h1>{`My Name is ${fname} ${lname}`}</h1>
+    <p>My Fav No is {0 + 0}</p>
   </React.Fragment>
     
   ,
   document.getElementById("root")
 );
+
+
+//create a simple web app on top 5 netflix
+
+// ReactDOM.render(
+//   <>
+//     <h1>Niraj Netflix pick</h1>
+//     <p>Here the list of my fav 5 Netflix flim</p>
+//     <ol>
+//       <li>Dobaaraa</li>
+//       <li>Kabhi Alvida Naa Kehna</li>
+//       <li>Drishyam</li>
+//       <li>Stree</li>
+//       <li>Main Hoo Na</li>
+//     </ol>
+//   </>,
+//   document.getElementById("root")
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
