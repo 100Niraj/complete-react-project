@@ -25,16 +25,18 @@ import ReactDOM from "react-dom";
 h1.innerHTML = "Hello Niraj";
 document.getElementById("root").appendChild(h1); */
 
-const arr = ['niraj', 'deepak', 'khushboo'];
+//////const arr = ['niraj', 'deepak', 'khushboo'];
 
 //in react v16 it's possible for render() without use div<> in html
 //to return an array of elemnts;
 
 ReactDOM.render(
-  [
-    <h1>Hello Niraj !</h1>,
+  <React.Fragment>
+    <h1>Hello Niraj !</h1>
     <p>How are you?</p>
-  ],
+  </React.Fragment>
+    
+  ,
   document.getElementById("root")
 );
 
