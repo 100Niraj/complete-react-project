@@ -34,11 +34,19 @@ document.getElementById("root").appendChild(h1); */
 
 const fname = "Niraj";
 const lname = "kumar"
+const img1 = "https://picsum.photos/200/300";
+const img2 = "https://picsum.photos/250/300";
+const img3 = "https://picsum.photos/230/300";
+
 
 ReactDOM.render(
   <React.Fragment>
     <h1>{`My Name is ${fname} ${lname}`}</h1>
-    <p>My Fav No is {0 + 0}</p>
+    <p>Some pic</p>
+    <img src={img1} alt ="randomImages" />
+    <img src={img2} alt ="randomImages" />
+    <img src={img3} alt ="randomImages" />
+
   </React.Fragment>
     
   ,
