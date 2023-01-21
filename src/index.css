@@ -12,7 +12,7 @@ code {
     monospace;
 } */
 *{ margin: 0; padding: 0; box-sizing: border-box;}
-.heading{
+/* .heading{
   color: #fa9191;
   text-align: center;
   text-transform: capitalize;
@@ -20,7 +20,7 @@ code {
   text-shadow: 0px 2px 4px #ffe9ff;
   margin: 50px 0;
 
-}
+} */
 .paragraph{
   color: slategray;
   text-align: center;

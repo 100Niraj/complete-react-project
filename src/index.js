@@ -41,11 +41,30 @@ const img2 = "https://picsum.photos/250/300";
 const img3 = "https://picsum.photos/230/300";
 
 
+//Internal CSS & Inline CSS Styling In React JS 
+// .heading{
+//   color: #fa9191;
+//   text-align: center;
+//   text-transform: capitalize;
+//   font-weight: bold;
+//   text-shadow: 0px 2px 4px #ffe9ff;
+//   margin: 50px 0;
+
+// }
+
+const heading = {
+  //key : value
+  color: "#fa9191",
+  textAlign: "center",
+  textTransform: "capitalize",
+};
+
+
 
 
 ReactDOM.render(
   <React.Fragment>
-    <h1 className ="heading"> {`My Name is ${fname} ${lname}`}</h1>
+    <h1 style={heading}> {`My Name is ${fname} ${lname}`}</h1>
     <p className ="paragraph">Some pic are added in my gallary</p>
     <div className ="img_div">
     <img src={img1} alt ="randomImages" />
