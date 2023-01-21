@@ -13,8 +13,10 @@
 
 //var React = require('react');
 //var ReactDOM = require('react-dom');
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import Heading from "./Heading";
+// import para from "./para";
 
 //jsx ;- javascrip xml
 
@@ -32,13 +34,13 @@ document.getElementById("root").appendChild(h1); */
 
 ///lesson_3 javascript expression
 
-import "./index.css"
+//import "./index.css"
 
-const fname = "Niraj";
-const lname = "kumar"
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/300";
-const img3 = "https://picsum.photos/230/300";
+//const fname = "Niraj";
+//const lname = "kumar"
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/300";
+// const img3 = "https://picsum.photos/230/300";
 
 
 //Internal CSS & Inline CSS Styling In React JS 
@@ -52,17 +54,18 @@ const img3 = "https://picsum.photos/230/300";
 
 // }
 
-const heading = {
+/*const heading = {
   //key : value
   color: "#fa9191",
   textAlign: "center",
   textTransform: "capitalize",
 };
+*/
 
 
 
 
-ReactDOM.render(
+/*ReactDOM.render(
   <React.Fragment>
     <h1 style={heading}> {`My Name is ${fname} ${lname}`}</h1>
     <p className ="paragraph">Some pic are added in my gallary</p>
@@ -77,6 +80,7 @@ ReactDOM.render(
   ,
   document.getElementById("root")
 );
+*/
 
 
 //create a simple web app on top 5 netflix
@@ -100,3 +104,23 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 //reportWebVitals();
+
+
+//function component
+
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+// import Heading from "./Heading";
+// import Para from "./Para";
+// import List from "./List";
+import App from "./App";
+
+ReactDOM.render(
+  <>
+  <App />
+  </>
+  ,
+  document.getElementById("root")
+);
