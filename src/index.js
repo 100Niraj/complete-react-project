@@ -110,17 +110,95 @@ document.getElementById("root").appendChild(h1); */
 
 
 
+// import React from "react";
+// import ReactDOM from "react-dom";
+// // import Heading from "./Heading";
+// // import Para from "./Para";
+// // import List from "./List";
+// import App from "./App";
+
+// ReactDOM.render(
+//   <>
+//   <App />
+//   </>
+//   ,
+//   document.getElementById("root")
+// );
+
+/////// prop and array in react 
+
 import React from "react";
 import ReactDOM from "react-dom";
-// import Heading from "./Heading";
-// import Para from "./Para";
-// import List from "./List";
-import App from "./App";
+import Card from "./Cards";
+
+import Sdata from "./Sdata";
+
+import "./index.css";
+
+
+
+//console.log(Sdata[1].sname );
+//kashmir files
+
+
+ 
 
 ReactDOM.render(
   <>
-  <App />
-  </>
-  ,
+  <h1 className="Heading">Top 10 movies of 2022</h1>
+  <Card imgsrc = {Sdata[0].imgsrc}
+  sname = {Sdata[0].sname }
+  rating ={Sdata[0].rating }
+  link = {Sdata[0].link }
+  />
+  <Card imgsrc ={Sdata[1].imgsrc }
+  sname = {Sdata[1].sname }
+  rating= {Sdata[1].rating }
+  link ={Sdata[1].link }
+  />
+  <Card imgsrc ={Sdata[2].imgsrc }
+  sname ={Sdata[2].sname }
+  rating ={Sdata[2].rating}
+  link ={Sdata[2].link}
+  />
+  <Card imgsrc = {Sdata[3].imgsrc }
+  sname ={Sdata[3].sname }
+  rating ={Sdata[3].rating }
+  link ={Sdata[3].link }
+  />
+  <Card imgsrc ={Sdata[4].imgsrc}
+  sname ={Sdata[4].sname} 
+  rating ={Sdata[4].rating }
+  link ={Sdata[4].link }
+  />
+  <Card imgsrc ={Sdata[5].imgsrc }
+  sname ={Sdata[5].sname}
+  rating ={Sdata[5].rating }
+  link ={Sdata[5].link}
+  />
+  <Card imgsrc ={Sdata[6].imgsrc}
+  sname ={Sdata[6].sname}
+  rating ={Sdata[6].rating}
+  link ={Sdata[6].link } 
+  />
+  <Card imgsrc ={Sdata[7].imgsrc}
+  sname ={Sdata[7].sname }
+  rating ={Sdata[7].rating}
+  link ={Sdata[7].link}
+  />
+  <Card imgsrc ={Sdata[8].imgsrc}
+  sname ={Sdata[8].sname}
+  rating ={Sdata[8].rating}
+  link ={Sdata[8].link}
+  />
+  <Card imgsrc = {Sdata[9].imgsrc}
+  sname = {Sdata[9].sname}
+  rating ={Sdata[9].rating}
+  link ={Sdata[9].link}
+  />
+  
+  </>,
   document.getElementById("root")
 );
+
+
