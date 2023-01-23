@@ -11,29 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-*{ margin: 0; padding: 0; box-sizing: border-box;}
-.heading{
-  color: #fa9191;
+*{ margin: 0; padding: 0; box-sizing: border-box; background-color: #d2dbdd;}
+
+
+ .Heading{
+  padding: 30px 0;
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: Uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #844949;
+  background: #a1aaa6;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+ }
+
+ .cards {
+  width: 100%;
+  height: auto;
+ }
+
+ .card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
+  background-color: rgb(255, 255, 255);
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 30px 18px rgba(0,0,0,0.1);
+  float: left;
+
+
+ }
+
+ .card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+  transform: scale(1.05, 1.05);
+
+ }
+
+ .card_img{
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_info {
+  background-color:#fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: #fff;
+}
+
+.card_category{
+  font-family: "Railway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+}
+
+.card_title{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Railway", sans-serif;
+  background-color: #fff;
   text-transform: capitalize;
-  font-weight: bold;
-  text-shadow: 0px 2px 4px #ffe9ff;
-  margin: 50px 0;
+
 
 }
-.paragraph{
-  color: slategray;
-  text-align: center;
-  margin: 20px 0;
-}
 
-.img_div{
-  display: flex;
-  justify-content: center;
-}
-
-.img_div img{
-  width: 300px;
-  height: 350px;
+.card_rating{
+  font-family: "Railway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  margin-bottom: 10px;
 
 }
+
+
+
+ .button{
+  padding: 5px 8px;
+  font-family: "Raleway" , sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid blue;
+  cursor: pointer;
+ }
+
