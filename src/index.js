@@ -8,6 +8,7 @@ import App from "./App";
 
 ReactDOM.render(
   <>
+  <h1> Hooks in functional component</h1>
   <App/>
   
   </>,
