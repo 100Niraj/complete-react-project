@@ -1,20 +1,23 @@
-import React, {useState} from "react";
+import React  from "react";
 import "./App.css";
+
+import BasicForm from './LoginForm/BasicForm';
 
 function  App ()  {
 
-   const [MyName , setMyname] = useState('Hii gaiz' );
+   // const [MyName , setMyname] = useState('Hii gaiz' );
 
-   const changeName  = () => {
-      setMyname('My Name is Niraj kumar');
+   // const changeName  = () => {
+   //    setMyname('My Name is Niraj kumar');
 
-   }
+   // }
 
    return (
-      <div className ="app" >
-         <h1 className ="header">{MyName}</h1>
-         <button className="btn" onClick={changeName}>xxx</button>
-      </div>
+      // <div className ="app" >
+      //    <h1 className ="header">{MyName}</h1>
+      //    <button className="btn" onClick={changeName}>xxx</button>
+      // </div>
+      <BasicForm/>
     
    )
 }
