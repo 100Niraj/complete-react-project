@@ -1,23 +1,26 @@
-import React  from "react";
+import React,{useState, useEffect} from "react";
 import "./App.css";
 
-import BasicForm from './LoginForm/BasicForm';
+
 
 function  App ()  {
 
-   // const [MyName , setMyname] = useState('Hii gaiz' );
+   const [count , setcount] = useState(0);
 
    // const changeName  = () => {
    //    setMyname('My Name is Niraj kumar');
 
    // }
+   useEffect(() => {
+      document.title = `(${count})`
+   })
 
    return (
-      // <div className ="app" >
-      //    <h1 className ="header">{MyName}</h1>
-      //    <button className="btn" onClick={changeName}>xxx</button>
-      // </div>
-      <BasicForm/>
+      <div className ="app" >
+         <h1 className ="header">{count}</h1>
+         <button className="btn" onClick={() => setcount(count + 1)}>xxx</button>
+      </div>
+   
     
    )
 }
